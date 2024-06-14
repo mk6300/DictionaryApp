@@ -1,13 +1,13 @@
 package com.dictionaryapp.service.impl;
 
 import com.dictionaryapp.model.dto.AddWordDTO;
-import com.dictionaryapp.model.entity.LanguageEnum;
 import com.dictionaryapp.model.entity.Language;
-import com.dictionaryapp.model.entity.Word;
+import com.dictionaryapp.model.entity.LanguageEnum;
 import com.dictionaryapp.model.entity.User;
+import com.dictionaryapp.model.entity.Word;
 import com.dictionaryapp.repo.LanguageRepo;
-import com.dictionaryapp.repo.WordRepo;
 import com.dictionaryapp.repo.UserRepo;
+import com.dictionaryapp.repo.WordRepo;
 import com.dictionaryapp.service.LanguageService;
 import com.dictionaryapp.service.WordService;
 import org.springframework.stereotype.Service;
