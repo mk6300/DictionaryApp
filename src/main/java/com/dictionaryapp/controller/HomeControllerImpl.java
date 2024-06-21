@@ -48,10 +48,10 @@ public class HomeControllerImpl implements HomeController {
         Set<Word> allSpanishWords = wordService.getAllSpanishWords();
         Set<Word> allItalianWords = wordService.getAllItalianWords();
 
-        model.addAttribute("allGermanWords", allGermanWords);
-        model.addAttribute("allFrenchWords", allFrenchWords);
+        model.addAttribute("AllGermanWord", allGermanWords);
+        model.addAttribute("allFrenchWord", allFrenchWords);
         model.addAttribute("allSpanishWord", allSpanishWords);
-        model.addAttribute("allItalianWords", allItalianWords);
+        model.addAttribute("allItalianWord", allItalianWords);
 
         long allCount = wordService.getAllCount();
         model.addAttribute("allCount", allCount);

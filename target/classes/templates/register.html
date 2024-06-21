@@ -14,8 +14,8 @@
             <div class="label-holder textCol d-flex justify-content-center">
                 <label for="username" class="h4 mb-2 text-white">Username</label>
             </div>
-            <input th:field="*{username}" th:errorclass="'is-invalid bg-danger'" type="text" class="form-control"
-                   id="username" name="username"/>
+            <input th:field="*{username}" th:errorclass="'is-invalid bg-danger'"
+                   type="text" class="form-control" id="username" name="username"/>
             <small th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="text-danger">Username error message</small>
         </div>
 

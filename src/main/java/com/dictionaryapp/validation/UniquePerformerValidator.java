@@ -1,6 +1,6 @@
 package com.dictionaryapp.validation;
 
-import com.dictionaryapp.service.impl.WordServiceImpl;
+import com.dictionaryapp.service.WordService;
 import com.dictionaryapp.validation.annotation.UniquePerformer;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
@@ -8,9 +8,9 @@ import jakarta.validation.ConstraintValidatorContext;
 
 public class UniquePerformerValidator implements ConstraintValidator<UniquePerformer, String> {
 
-    private final WordServiceImpl songService;
+    private final WordService songService;
 
-    public UniquePerformerValidator(WordServiceImpl songService) {
+    public UniquePerformerValidator(WordService songService) {
         this.songService = songService;
     }
 

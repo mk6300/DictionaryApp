@@ -1,6 +1,6 @@
 package com.dictionaryapp.validation;
 
-import com.dictionaryapp.service.impl.UserServiceImpl;
+import com.dictionaryapp.service.UserService;
 import com.dictionaryapp.validation.annotation.UniqueEmail;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
@@ -8,9 +8,9 @@ import jakarta.validation.ConstraintValidatorContext;
 
 public class UniqueEmailValidator implements ConstraintValidator<UniqueEmail, String> {
 
-    private final UserServiceImpl userService;
+    private final UserService userService;
 
-    public UniqueEmailValidator(UserServiceImpl userService) {
+    public UniqueEmailValidator(UserService userService) {
         this.userService = userService;
     }
 

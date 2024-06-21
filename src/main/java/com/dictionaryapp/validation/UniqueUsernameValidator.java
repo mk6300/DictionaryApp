@@ -1,6 +1,6 @@
 package com.dictionaryapp.validation;
 
-import com.dictionaryapp.service.impl.UserServiceImpl;
+import com.dictionaryapp.service.UserService;
 import com.dictionaryapp.validation.annotation.UniqueUsername;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
@@ -8,9 +8,9 @@ import jakarta.validation.ConstraintValidatorContext;
 
 public class UniqueUsernameValidator implements ConstraintValidator<UniqueUsername, String> {
 
-    private final UserServiceImpl userService;
+    private final UserService userService;
 
-    public UniqueUsernameValidator(UserServiceImpl userService) {
+    public UniqueUsernameValidator(UserService userService) {
         this.userService = userService;
     }
 

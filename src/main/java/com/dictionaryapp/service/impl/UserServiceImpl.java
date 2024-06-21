@@ -1,7 +1,7 @@
 package com.dictionaryapp.service.impl;
 
-import com.dictionaryapp.model.dto.*;
-import com.dictionaryapp.model.entity.Word;
+import com.dictionaryapp.model.dto.RegisterDTO;
+import com.dictionaryapp.model.dto.UserDTO;
 import com.dictionaryapp.model.entity.User;
 import com.dictionaryapp.repo.UserRepo;
 import com.dictionaryapp.service.UserService;
@@ -12,8 +12,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
